@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Кастомальне модальне вікно</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Спробуйте залишити цю сторінку</h1>
+    <p>Ви побачите кастомальне модальне вікно перед стандартним діалогом підтвердження.</p>
+<button id="btn">asdass</button>
+    <div id="customModal" class="modal">
+        <div class="modal-content">
+            <span class="close-button" onclick="closeModal()">&times;</span>
+            <p>Ви впевнені, що хочете залишити цю сторінку? Усі незбережені зміни будуть втрачені.</p>
+            <button onclick="confirmExit()">Так</button>
+            <button onclick="closeModal()">Ні</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
